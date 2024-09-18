@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom colors for dark mode */
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a202c;
+  --text-color: #f5f5f5;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.toastify-container {
+  z-index: 9999; /* Ensure the container is above other elements */
+}
